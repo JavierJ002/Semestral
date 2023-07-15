@@ -1,0 +1,252 @@
+@charset "UTF-8";
+@font-face {
+    font-family: CreamCake;
+    src: url(FuenteLetras/CreamCake.otf);
+}
+@font-face {
+    font-family: Valentina;
+    src: url(FuenteLetras/Valentina.ttf);
+}
+
+body{
+    margin: 0;
+}
+header
+{
+    background-color: #16C172;
+    height: 280px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+#banner
+{
+    height: 275px;
+    width: 355px;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+#logo
+{
+    margin-left:15px;
+    margin-top: 25px;
+    border: 2px solid white;
+}
+.Titulo
+{
+    font-family: CreamCake;
+    display: flex;
+    font-size: 42px;
+    font-weight: bold;
+    width: 800px;
+    justify-content: center;
+    color: rgb(231, 240, 236);
+    margin-top: 50px;
+}
+#redesSociales
+{
+    margin-right: 5px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.logoRed
+{
+    background-color: #16C172;
+    border: 1px solid #16C172;
+    border-radius: 60%;
+    margin-left: 30px;
+    margin-bottom: 5px;   
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2); 
+}
+.logoRed:hover
+{
+    transform: scale(1.2);
+    border: 3px solid #3ef8a1;
+}
+nav{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #33658a;
+    padding-left:5%;
+    padding-right: 10%;
+}
+#titulonav
+{
+    color: #fff;
+    font-size: 28px;
+}
+span{
+    color: #16C172;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: transform 0.2s ease;
+  }
+  
+  nav ul li:hover {
+    color: #1edbf8;
+    transform: scale(1.2);
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease; /* Agregar transición de color */
+  }
+  
+  nav ul li:hover a {
+    color: #92fc36; /* Cambiar el color al pasar el cursor por encima */
+  }
+
+#principal
+{
+    display: flex;
+    height: 1025px;
+    width: auto;
+    background-color: #5be3f8e6;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.contenidoIntegrantes
+{
+    border-radius: 20px;
+    height: 875px;
+    width: 370px;
+    background-color: #214F4B;
+    margin-left: 80px;
+    margin-top:40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+
+}
+.nombreIntegrante
+{
+    color:#FFF;
+    font-family: Valentina;
+    font-weight: bold;
+    font-size: 32px;
+    justify-content: center;
+    display: flex;
+    text-align: center
+}
+
+.ImgIntegrantes{
+    width: 325px;
+    height: 300x;
+    margin-left: 20px;
+}
+.InfoClave
+{
+    padding: 20px;
+}
+.Datos
+{
+    font-family: Valentina;
+    font-size: 23px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+.contenidoIntegrantes strong
+{
+    color: #5be3f8e6;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Valentina;
+}
+.contenidoIntegrantes ul li
+{
+    font-size: 25px;
+    font-family: CreamCake;
+    color: #ffffff;
+}
+.contenidoIntegrantes p
+{
+    font-size: 25px;
+    font-family: CreamCake;
+    color: #ffffff;
+}
+
+
+.botonHome {
+    background-color: #4CAF50; 
+    border: none;
+    color: white; 
+    height: 30px;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 20px; 
+    font-weight: bold;
+    margin: 4px 2px;
+    padding: 10px 12px; 
+    cursor: pointer; 
+    border-radius: 20px; 
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+  }
+  
+  .botonHome:hover {
+    background-color: #4ae254; /* Color de fondo al pasar el cursor */
+  }
+  
+  footer 
+  {
+      background-color: #16C172;
+      padding: 20px;
+      text-align: center; /* Alineación centrada para el texto de copyright */
+  }
+  
+  .footer-container 
+  {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .footer-row 
+  {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 10px;
+  }
+  
+  .footer-button 
+  {
+      display: inline-block;
+      padding: 6px 12px;
+      margin: 0 5px;
+      background-color: #fff;
+      color: #16C172;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+  }
+  .logout-button:active {
+    transform: translateY(1px); /* Aplicamos una translación vertical cuando el botón está siendo presionado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Agregamos una sombra para resaltar el botón presionado */
+  }
+  
+    
+  .footer-copyright 
+  {
+      font-size: 15px; /* Tamaño de fuente más pequeño para el texto de copyright */
+      color: #fff;
+      margin: auto; /* Eliminar el margen predeterminado del párrafo */
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  

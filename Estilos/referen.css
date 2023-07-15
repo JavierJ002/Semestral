@@ -1,0 +1,251 @@
+
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: CreamCake;
+  src: url(FuenteLetras/CreamCake.otf);
+}
+@font-face {
+  font-family: Valentina;
+  src: url(FuenteLetras/Valentina.ttf);
+}
+header
+{
+  background-color: #16C172;
+  height: 280px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+#banner
+{
+  height: 275px;
+  width: 355px;
+  margin-left: 10px;
+  margin-right: 50px;
+  flex-direction: row;
+}
+#logo
+{
+  margin-left:15px;
+  margin-top: 25px;
+  border: 2px solid white;
+}
+.Titulo
+{
+  font-family: Valentina;
+  display: flex;
+  font-size: 35px;
+  font-weight: bold;
+  width: 800px;
+  justify-content: center;
+  color: rgb(231, 240, 236);
+  margin-top: 50px;
+}
+#redesSociales
+{
+  margin-right: 5px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.logoRed
+{
+  background-color: #16C172;
+  border: 1px solid #16C172;
+  border-radius: 60%;
+  margin-left: 30px;
+  margin-bottom: 5px;    
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+}
+.logoRed:hover
+{
+  transform: scale(1.2);
+  border: 3px solid #3ef8a1;
+}
+nav{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  background-color: #33658a;
+  padding-left:5%;
+  padding-right: 10%;
+}
+#titulonav
+{
+  color: #fff;
+  font-size: 28px;
+}
+span{
+  color: #16C172;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+  transition: transform 0.2s ease;
+}
+
+nav ul li:hover {
+  color: #1edbf8;
+  transform: scale(1.2);
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease; /* Agregar transición de color */
+}
+
+nav ul li:hover a {
+  color: #92fc36; /* Cambiar el color al pasar el cursor por encima */
+}
+
+.h1-titulo{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 35px;
+  color: #22233e;
+}
+/* Colores con variables personalizadas */
+:root {
+--rojo: #FF0032;
+--azul: #0089d2;
+--chocolate: #DC7633;
+--amarillo: #E8FF00;
+--salmon: #FA8072;
+--morado: #FF16A0;
+--verdeRadiactivo: #33cc99;
+--verdeRana: #08FF00;
+}
+
+.tabla-periodica {
+padding: 50px 70px 60px 70px;
+}
+
+table {
+border-collapse: collapse;
+width: 100%;
+}
+/*estilos de las celdas*/
+th,td {
+border: 1.5px solid #000;
+padding: 10px;
+background-color: white;
+text-align: center;
+}
+
+td a {
+text-decoration: none;
+color: #000;
+}
+
+.vacio {
+border: none;
+}
+
+/*Colores de las celdas*/
+.azul {
+background-color: var(--azul);
+}
+
+.amarillo {
+  background-color: var(--amarillo);
+}
+
+.chocolate {
+background-color: var(--chocolate);
+}
+
+.rojo {
+  background-color: var(--rojo);
+}
+
+.salmon {
+background-color: var(--salmon);
+}
+
+.verdeRana {
+  background-color: var(--verdeRana);
+}  
+
+.morado {
+background-color: var(--morado);
+}
+
+.verdeRadiactivo {
+background-color: var(--verdeRadiactivo);
+}
+
+/*se le añade el hover a todas las celdas de la tabla*/
+.rojo:hover,
+.amarillo:hover,
+.azul:hover,
+.chocolate:hover,
+.salmon:hover,
+.verdeRadiactivo:hover,
+.morado:hover,
+.verdeRana:hover {
+background-color: #B2BABB ;
+}
+
+footer 
+{
+  background-color: #16C172;
+  padding: 20px;
+  text-align: center; /* Alineación centrada para el texto de copyright */
+}
+
+.footer-container 
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-row 
+{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.footer-button 
+{
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 0 5px;
+  background-color: #fff;
+  color: #16C172;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+.logout-button:active {
+transform: translateY(1px); /* Aplicamos una translación vertical cuando el botón está siendo presionado */
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Agregamos una sombra para resaltar el botón presionado */
+}
+
+
+.footer-copyright 
+{
+  font-size: 15px; /* Tamaño de fuente más pequeño para el texto de copyright */
+  color: #fff;
+  margin: auto; /* Eliminar el margen predeterminado del párrafo */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+

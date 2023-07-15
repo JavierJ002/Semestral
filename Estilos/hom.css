@@ -31,7 +31,7 @@ header
 }
 .Titulo
 {
-    font-family: 
+    font-family: 'Lato', sans-serif;
     display: flex;
     font-size: 42px;
     font-weight: bold;
